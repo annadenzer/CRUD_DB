@@ -1,0 +1,196 @@
+/*
+Curso: Engenharia de Software
+Disciplina: Linguagem e Técnicas de Programacão
+Professor: Flores
+Turma: ESOFT-2
+
+Componentes:
+26001788-2 - Anna Julia Denzer de Paula
+26009422-2 - Eduardo de Freitas Martins da Silva
+26010318-2 - Fabio Pinheiro
+26006516-2 - Guilherme Vinicius da Silva
+26014696-2 - João Felipe Moro
+26002013-2 - Juan Gabriel Ribeiro de Carvalho
+26008749-2 - Juan Guilherme Mendes de Moraes 
+26011565-2 - Lauane Gabrielly Putinato Lino
+
+Data: 17 de Novembro de 2026
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0f2f1 0%, #f4f4f4 100%);
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.5;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    border-top: 6px solid #00897b;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    color: #00695c;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+}
+
+h2 {
+    color: #00695c;
+    border-left: 5px solid #00897b;
+    padding-left: 12px;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 22px;
+    text-decoration: none;
+    color: #00695c;
+    font-weight: bold;
+    border: 2px solid #00897b;
+    border-radius: 25px;
+    transition: all 0.2s;
+}
+
+nav a:hover {
+    background-color: #00897b;
+    color: #fff;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #cfd8dc;
+    margin: 20px 0;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #00695c;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f8f7;
+}
+
+tr:hover td {
+    background-color: #e0f2f1;
+}
+
+.button {
+    display: inline-block;
+    padding: 9px 18px;
+    margin: 5px 3px 5px 0;
+    background-color: #00897b;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.button:hover {
+    background-color: #00695c;
+    transform: translateY(-1px);
+}
+
+.button.edit {
+    background-color: #ffb300;
+    color: #333;
+}
+
+.button.edit:hover {
+    background-color: #ff8f00;
+}
+
+.button.delete {
+    background-color: #e53935;
+}
+
+.button.delete:hover {
+    background-color: #b71c1c;
+}
+
+/* ===== Formulários ===== */
+form {
+    margin-top: 20px;
+    background-color: #f5fbfa;
+    padding: 25px;
+    border: 1px solid #b2dfdb;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #00695c;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #b0bec5;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: #fff;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #00897b;
+    box-shadow: 0 0 0 3px rgba(0, 137, 123, 0.2);
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
